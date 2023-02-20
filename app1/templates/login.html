@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body bgcolor="red">
+<center><h1> LOGIN PAGE</h1></center>
+<form method="post" action="{% url 'adminlogin' %}" enctype="multipart/form-data">
+                        {% csrf_token %}
+                      <div align="center">
+                        <label for="exampleInputName1">Username</label>
+                        <input type="text" class="form-control" id="exampleInputName1" placeholder="Username" name="username">
+                      </div><br>
+                      <div align="center">
+                        <label for="exampleInputName1">Password</label>
+                         <input type="text" class="form-control" id="exampleInputEmail2" placeholder="Password" name="password">
+                      </div><br>
+                      <div align="center">
+                      <button  type="submit" class="btn btn-primary mr-2">Submit</button>
+                      <button class="btn btn-dark">Cancel</button>
+                      </div>
+    </form>
+</body>
+</html>
